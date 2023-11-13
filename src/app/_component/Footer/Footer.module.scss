@@ -1,0 +1,39 @@
+.footer {
+  margin-top: 80px;
+  padding: 0 20px;
+  border-top: 1px solid #eee;
+  &__inner {
+    padding: 50px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.logo {
+  width: 226px;
+  height: 86px;
+}
+.flex {
+  margin-top: 50px;
+  &__inner {
+    display: flex;
+    > div {
+      font-weight: bold;
+
+      &:nth-of-type(1) {
+        margin-right: 110px;
+      }
+      a {
+        color: #e47937;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.copy {
+  margin-top: 100px;
+  font-size: 12px;
+  text-align: center;
+}

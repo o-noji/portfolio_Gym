@@ -1,0 +1,39 @@
+.accordion {
+  margin-top: 80px;
+  &__inner {
+    padding: 0;
+  }
+  button {
+    background-color: #eeeeee;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+    &::before {
+      content: "Q";
+      font-size: 24px;
+      color: #e47936;
+      margin-right: 10px;
+    }
+    + div {
+      // background-color: #eeeeee;
+      padding: 0 20px 0 40px;
+      // height: 68px !important;
+      font-size: 16px;
+      font-weight: bold;
+      display: flex !important;
+      align-items: center;
+      margin-bottom: 20px;
+      &::before {
+        content: "A";
+        font-size: 24px;
+        color: #e47936;
+        margin-right: 10px;
+      }
+    }
+    svg {
+      margin-left: auto;
+    }
+  }
+}
