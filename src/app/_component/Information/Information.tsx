@@ -31,6 +31,27 @@ const InformationData = [
     url: "/",
     img: "/img/information/img01.jpg",
   },
+  {
+    day: "2023.0.0",
+    title: "ダミータイトル",
+    description: "ダミーテキスト",
+    url: "/",
+    img: "/img/information/img01.jpg",
+  },
+  {
+    day: "2023.0.0",
+    title: "ダミータイトル",
+    description: "ダミーテキスト",
+    url: "/",
+    img: "/img/information/img01.jpg",
+  },
+  {
+    day: "2023.0.0",
+    title: "ダミータイトル",
+    description: "ダミーテキスト",
+    url: "/",
+    img: "/img/information/img01.jpg",
+  },
 ];
 
 export default function Information({ show }: { show?: number }) {

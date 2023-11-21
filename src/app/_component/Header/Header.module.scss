@@ -3,6 +3,10 @@
   padding: 0 20px;
   position: fixed;
   background-color: rgba($color: #fff, $alpha: 0.9);
+  z-index: 1;
+  @media screen and (max-width: 768px) {
+    padding: 0 10px;
+  }
   &__inner {
     width: 100%;
     max-width: 1200px;
@@ -16,6 +20,9 @@
 .logo {
   width: 226px;
   line-height: 0;
+  @media screen and (max-width: 768px) {
+    width: 113px;
+  }
 }
 .nav {
   width: 100%;
@@ -33,6 +40,9 @@
     li {
       font-size: 24px;
       font-weight: bold;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
   button {
@@ -42,6 +52,10 @@
     padding-block: 0;
     padding-inline: 0;
     background: none;
+    @media screen and (max-width: 768px) {
+      width: 100px;
+      height: 35px;
+    }
     a {
       color: #fff;
       width: 100%;
@@ -53,6 +67,9 @@
       border-radius: 3px;
       font-weight: bold;
       background-color: #e47937;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
 }

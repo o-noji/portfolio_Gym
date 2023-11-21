@@ -1,5 +1,5 @@
-import { Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from "@chakra-ui/react";
 import styles from "@/app/_component/FAQ/FAQ.module.scss";
+import { Accordion } from "@mantine/core";
 
 const FAQData = [
   {
@@ -30,10 +30,19 @@ const FAQData = [
 
 export default function Faq({ show }: { show?: number }) {
   const showFAQData = FAQData.slice(0, show);
+
   return (
     <div className={styles.accordion}>
       <div className={styles.accordion__inner}>
-        <Accordion allowToggle>
+        <Accordion defaultValue="Apples">
+          {showFAQData.map((item) => (
+            <Accordion.Item key={item.q} value={item.q}>
+              <Accordion.Control>{item.q}</Accordion.Control>
+              <Accordion.Panel>{item.a}</Accordion.Panel>
+            </Accordion.Item>
+          ))}
+        </Accordion>
+        {/* <Accordion allowToggle>
           {showFAQData.map((items) => (
             <AccordionItem key={items.q}>
               <AccordionButton>
@@ -43,7 +52,7 @@ export default function Faq({ show }: { show?: number }) {
               <AccordionPanel padding={20}>{items.a}</AccordionPanel>
             </AccordionItem>
           ))}
-        </Accordion>
+        </Accordion> */}
       </div>
     </div>
   );

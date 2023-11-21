@@ -1,7 +1,7 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/app/_component/Header/Header.module.scss";
-
 const HeaderData = [
   {
     name: "Top",
@@ -9,15 +9,15 @@ const HeaderData = [
   },
   {
     name: "About",
-    url: "/",
+    url: "/about/",
   },
   {
     name: "Plan",
-    url: "/",
+    url: "/plan/",
   },
   {
     name: "FAQ",
-    url: "/",
+    url: "/faq/",
   },
 ];
 
@@ -31,6 +31,7 @@ export default function Header() {
               <Image src="/img/logo.jpg" width={226} height={86} alt="OKD GYM" />
             </Link>
           </h1>
+
           <nav className={styles.nav}>
             <div className={styles.nav__inner}>
               <ul>

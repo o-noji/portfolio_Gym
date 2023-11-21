@@ -1,5 +1,12 @@
+.mv {
+  background-image: url(/img/top/topMv.jpg);
+}
+
 .accordion {
   margin-top: 80px;
+  @media screen and (max-width: 768px) {
+    margin-top: 50px;
+  }
   &__inner {
     padding: 0;
   }
@@ -10,6 +17,10 @@
     border: none;
     font-weight: bold;
     margin-bottom: 20px;
+    cursor: pointer;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 10px;
+    }
     &::before {
       content: "Q";
       font-size: 24px;
@@ -17,14 +28,15 @@
       margin-right: 10px;
     }
     + div {
-      // background-color: #eeeeee;
       padding: 0 20px 0 40px;
-      // height: 68px !important;
       font-size: 16px;
       font-weight: bold;
       display: flex !important;
       align-items: center;
       margin-bottom: 20px;
+      @media screen and (max-width: 768px) {
+        padding: 0 10px 0 40px;
+      }
       &::before {
         content: "A";
         font-size: 24px;
