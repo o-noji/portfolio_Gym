@@ -1,3 +1,4 @@
+"use client";
 import styles from "@/app/_component/FAQ/FAQ.module.scss";
 import { Accordion } from "@mantine/core";
 
@@ -34,7 +35,7 @@ export default function Faq({ show }: { show?: number }) {
   return (
     <div className={styles.accordion}>
       <div className={styles.accordion__inner}>
-        <Accordion defaultValue="Apples">
+        <Accordion>
           {showFAQData.map((item) => (
             <Accordion.Item key={item.q} value={item.q}>
               <Accordion.Control>{item.q}</Accordion.Control>
@@ -42,6 +43,7 @@ export default function Faq({ show }: { show?: number }) {
             </Accordion.Item>
           ))}
         </Accordion>
+
         {/* <Accordion allowToggle>
           {showFAQData.map((items) => (
             <AccordionItem key={items.q}>

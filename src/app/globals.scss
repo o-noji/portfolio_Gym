@@ -279,3 +279,37 @@ p {
     }
   }
 }
+.mantine-Accordion-item {
+  border-color: transparent !important;
+
+  + div {
+    margin-top: 20px;
+    @media screen and (max-width: 768px) {
+      margin-top: 10px;
+    }
+  }
+}
+.mantine-Accordion-label {
+  font-weight: bold !important;
+}
+.mantine-Accordion-content {
+  padding: 0 20px 0 40px !important;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex !important;
+  align-items: center;
+  // margin-bottom: 20px;
+  @media screen and (max-width: 768px) {
+    padding: 0 10px 0 40px !important;
+  }
+  &::before {
+    content: "A";
+    font-size: 24px;
+    color: #e47936;
+    margin-right: 10px;
+  }
+}
+.mantine-Accordion-chevron {
+  width: 25px;
+  height: auto;
+}

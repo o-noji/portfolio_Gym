@@ -31,17 +31,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
   }
   ul {
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 280px;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
     li {
       font-size: 24px;
       font-weight: bold;
       @media screen and (max-width: 768px) {
-        font-size: 16px;
+        font-size: 20px;
+        padding: 10px 0;
       }
     }
   }
@@ -53,8 +60,8 @@
     padding-inline: 0;
     background: none;
     @media screen and (max-width: 768px) {
-      width: 100px;
-      height: 35px;
+      margin: 10px auto 0;
+      display: block;
     }
     a {
       color: #fff;
@@ -68,7 +75,7 @@
       font-weight: bold;
       background-color: #e47937;
       @media screen and (max-width: 768px) {
-        font-size: 16px;
+        font-size: 20px;
       }
     }
   }

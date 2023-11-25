@@ -1,5 +1,6 @@
 import { MantineProvider } from "@mantine/core";
 import "./globals.scss";
+import "@mantine/core/styles.css";
 
 export const metadata = {
   title: "OKD GYM",
