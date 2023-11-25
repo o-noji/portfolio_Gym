@@ -166,6 +166,21 @@ a {
 
 .main {
   padding-top: 106px;
+  // transition: opacity 0.25s linear;
+  animation: fadeIn 2.5s ease 0s 1 normal;
+  @media screen and (max-width: 768px) {
+    padding-top: 63px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .section {

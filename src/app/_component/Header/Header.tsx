@@ -37,7 +37,7 @@ const nav = (
         })}
       </ul>
       <button>
-        <Link href="#">Reserve</Link>
+        <Link href="/reserve/">Reserve</Link>
       </button>
     </div>
   </nav>
