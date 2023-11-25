@@ -1,7 +1,7 @@
 import Header from "@/app/_component/Header/Header";
 import Footer from "@/app/_component/Footer/Footer";
 import styles from "@/app/_component/FAQ/FAQ.module.scss";
-import Faq from "@/app/_component/FAQ/FAQ";
+import FaqAccordion from "@/app/_component/FAQ/FAQ";
 
 export default function FAQ() {
   return (
@@ -18,7 +18,7 @@ export default function FAQ() {
             <div className="section__inner">
               <h3>よくあるご質問</h3>
               <p>よくいただいているご質問を掲載しております。</p>
-              <Faq />
+              <FaqAccordion />
             </div>
           </section>
         </div>

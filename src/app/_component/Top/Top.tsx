@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Information from "@/app/_component/Information/Information";
-import Faq from "@/app/_component/FAQ/FAQ";
+import FaqAccordion from "@/app/_component/FAQ/FAQ";
 import infoStyles from "@/app/_component/Information/Information.module.scss";
 import aboutStyles from "@/app/_component/About/About.module.scss";
 import planStyles from "@/app/_component/Plan/Plan.module.scss";
@@ -95,7 +95,7 @@ export default function Top() {
             <h2>FAQ</h2>
             <h3>よくあるご質問</h3>
             <p>よくいただいているご質問を掲載しております。</p>
-            <Faq show={3} />
+            <FaqAccordion show={3} />
           </div>
         </section>
       </div>

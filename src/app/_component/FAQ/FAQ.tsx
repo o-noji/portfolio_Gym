@@ -29,7 +29,7 @@ const FAQData = [
   },
 ];
 
-export default function Faq({ show }: { show?: number }) {
+export default function FaqAccordion({ show }: { show?: number }) {
   const showFAQData = FAQData.slice(0, show);
 
   return (
