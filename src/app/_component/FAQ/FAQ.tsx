@@ -43,18 +43,6 @@ export default function Faq({ show }: { show?: number }) {
             </Accordion.Item>
           ))}
         </Accordion>
-
-        {/* <Accordion allowToggle>
-          {showFAQData.map((items) => (
-            <AccordionItem key={items.q}>
-              <AccordionButton>
-                {items.q}
-                <AccordionIcon width={42} height={24} />
-              </AccordionButton>
-              <AccordionPanel padding={20}>{items.a}</AccordionPanel>
-            </AccordionItem>
-          ))}
-        </Accordion> */}
       </div>
     </div>
   );
