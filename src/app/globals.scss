@@ -190,6 +190,9 @@ a {
   }
   &:nth-of-type(1) {
     margin-top: 100px;
+    @media screen and (max-width: 768px) {
+      margin-top: 50px;
+    }
   }
   &__inner {
     width: 100%;
@@ -198,6 +201,9 @@ a {
   }
   + .section {
     margin-top: 100px;
+    @media screen and (max-width: 768px) {
+      margin-top: 50px;
+    }
   }
 }
 h2 {
