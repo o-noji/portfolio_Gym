@@ -41,7 +41,7 @@ export default function Reserve() {
           </div>
           <section className="section">
             <div className="section__inner">
-              <h3>料金プラン</h3>
+              <h3>ご予約</h3>
               <form className={styles.form} onSubmit={registerUser}>
                 <label className={styles.label}>
                   名前<span>*</span>

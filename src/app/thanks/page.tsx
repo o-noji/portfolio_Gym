@@ -27,7 +27,6 @@ export default function Thanks() {
           </div>
           <section className="section">
             <div className="section__inner">
-              <h3>料金プラン</h3>
               <p className={styles.p}>
                 この度は◯◯にお問い合わせいただき、誠にありがとうございます。
                 <br />
