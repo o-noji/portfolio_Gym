@@ -207,7 +207,7 @@ h2 {
   position: relative;
   z-index: 1;
   @media screen and (max-width: 768px) {
-    font-size: 32px;
+    font-size: 40px;
   }
   + * {
     margin-top: 50px;
@@ -313,9 +313,8 @@ p {
   font-weight: bold;
   display: flex !important;
   align-items: center;
-  // margin-bottom: 20px;
   @media screen and (max-width: 768px) {
-    padding: 0 10px 0 40px !important;
+    padding: 0 10px 0 20px !important;
   }
   &::before {
     content: "A";
