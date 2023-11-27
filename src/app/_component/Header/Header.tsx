@@ -59,7 +59,7 @@ export default function Header() {
 
           {isMobile && <Burger opened={opened} onClick={toggle} aria-label="Toggle navigation" />}
           {isMobile ? (
-            <Drawer opened={opened} onClose={toggle} withCloseButton={false}>
+            <Drawer opened={opened} onClose={toggle} withCloseButton={true}>
               {nav}
             </Drawer>
           ) : (

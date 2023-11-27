@@ -170,6 +170,7 @@ a {
   animation: fadeIn 2.5s ease 0s 1 normal;
   @media screen and (max-width: 768px) {
     padding-top: 63px;
+    animation: none;
   }
 }
 
@@ -257,7 +258,7 @@ p {
   + p {
     margin-top: 50px;
     @media screen and (max-width: 768px) {
-      margin-top: 30px;
+      margin-top: 20px;
     }
   }
 }
@@ -295,7 +296,7 @@ p {
       display: flex;
       align-items: center;
       @media screen and (max-width: 768px) {
-        height: 200px;
+        height: 120px;
       }
     }
   }
