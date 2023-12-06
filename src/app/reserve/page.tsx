@@ -1,7 +1,6 @@
 "use client";
 import React, { FormEvent, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { postSendMail } from "@/app/api/sendMail/route";
 import Header from "@/app/_component/Header/Header";
 import Footer from "@/app/_component/Footer/Footer";
 import styles from "@/app/_component/Reserve/Reserve.module.scss";
