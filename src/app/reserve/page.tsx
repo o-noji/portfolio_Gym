@@ -1,4 +1,4 @@
-"use client";
+"use server";
 import React, { FormEvent, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Header from "@/app/_component/Header/Header";
