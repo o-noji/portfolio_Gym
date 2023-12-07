@@ -1,4 +1,3 @@
-<<<<<<<< HEAD:src/app/api/sendMail/route.js
 "use server";
 import sgMail from "@sendgrid/mail";
 sgMail.setApiKey(process.env.SENDGRID_API);
@@ -7,14 +6,6 @@ export default async function handler(req, res) {
   let response = null;
 
   if (req.method === "POST") {
-========
-"use client";
-export default function handler(req: { method: string; body: { name: any; email: any; message: string } }) {
-  if (req.method === "POST") {
-    const sgMail = require("@sendgrid/mail");
-    sgMail.setApiKey(process.env.SENDGRID_API);
-
->>>>>>>> parent of 15371f5 (🐛):src/app/_component/Reserve/sendMail.tsx
     const msg = {
       to: req.body.email,
       from: process.env.MAIL_FROM,
@@ -44,7 +35,6 @@ export default function handler(req: { method: string; body: { name: any; email:
     `,
     };
 
-<<<<<<<< HEAD:src/app/api/sendMail/route.js
     try {
       const response1 = await sgMail.send(msg);
       const response2 = await sgMail.send(notification);
@@ -60,13 +50,5 @@ export default function handler(req: { method: string; body: { name: any; email:
     }
   } else {
     res.status(405).json({ error: "許可されていないメソッド" });
-========
-    (async () => {
-      try {
-        await sgMail.send(msg);
-        await sgMail.send(notification);
-      } catch (error: any) {}
-    })();
->>>>>>>> parent of 15371f5 (🐛):src/app/_component/Reserve/sendMail.tsx
   }
 }
