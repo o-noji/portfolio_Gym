@@ -14,18 +14,6 @@ export default function Reserve() {
   const registerUser: React.FormEventHandler<HTMLFormElement> = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    await fetch("/api/sendMail", {
-      body: JSON.stringify({
-        name: nameRef.current?.value,
-        email: emailRef.current?.value,
-        date: dateRef.current?.value,
-      }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-      method: "POST",
-    });
-
     router.push("/thanks");
   };
 
